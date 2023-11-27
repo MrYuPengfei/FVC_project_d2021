@@ -1,0 +1,1 @@
+echo "CUDA_VISIBLE_DEVICES=0,1,2,3 nohup python -u train.py --log log.txt --config config.json > Record.log 2>&1  &"

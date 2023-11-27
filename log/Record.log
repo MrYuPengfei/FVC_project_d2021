@@ -1,0 +1,1208 @@
+nohup: ignoring input
+Using /data/users/pengfei/.cache/torch_extensions as PyTorch extensions root...
+Emitting ninja build file /data/users/pengfei/.cache/torch_extensions/torchac_backend/build.ninja...
+Building extension module torchac_backend...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: warning: bad deps log signature or version; starting over
+[1/2] c++ -MMD -MF torchac_backend.o.d -DTORCH_EXTENSION_NAME=torchac_backend -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/include -isystem /data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/include/TH -isystem /data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/include/THC -isystem /data/users/pengfei/.conda/envs/gop_torch/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++14 -c /data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torchac/backend/torchac_backend.cpp -o torchac_backend.o 
+[2/2] c++ torchac_backend.o -shared -L/data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/lib -lc10 -ltorch_cpu -ltorch -ltorch_python -o torchac_backend.so
+Loading extension module torchac_backend...
+dataset find image:  10245
+epoch 0
+/data/users/pengfei/.conda/envs/gop_torch/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Train Epoch : 00 [ 100/ 512 ( 20%)] Avgloss:18286.300781 lr:0.0001 time:0.7270780396039604 bpp:4.653358459472656
+details :  align_psnr : -3.70  psnr : -6.98
+Train Epoch : 00 [ 200/ 512 ( 39%)] Avgloss:3422.315674 lr:0.0001 time:0.27765517 bpp:4.460684776306152
+details :  align_psnr : -3.11  psnr : -1.51
+Train Epoch : 00 [ 300/ 512 ( 59%)] Avgloss:2205.158252 lr:0.0001 time:0.27630697000000004 bpp:4.322373867034912
+details :  align_psnr : -2.66  psnr : 0.54
+Train Epoch : 00 [ 400/ 512 ( 78%)] Avgloss:1615.525159 lr:0.0001 time:0.27692159 bpp:4.184787750244141
+details :  align_psnr : -2.18  psnr : 2.09
+Train Epoch : 00 [ 500/ 512 ( 98%)] Avgloss:1284.779687 lr:0.0001 time:0.27556026 bpp:4.07009220123291
+details :  align_psnr : -1.40  psnr : 3.13
+epoch 1
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 01 [ 100/ 512 ( 20%)] Avgloss:1066.286505 lr:0.0001 time:0.2818973465346535 bpp:3.949324369430542
+details :  align_psnr : -0.49  psnr : 3.93
+Train Epoch : 01 [ 200/ 512 ( 39%)] Avgloss:923.164850 lr:0.0001 time:0.27726654 bpp:3.860443115234375
+details :  align_psnr : 0.41  psnr : 4.49
+Train Epoch : 01 [ 300/ 512 ( 59%)] Avgloss:794.358099 lr:0.0001 time:0.27577246 bpp:3.7841439247131348
+details :  align_psnr : 1.08  psnr : 5.12
+Train Epoch : 01 [ 400/ 512 ( 78%)] Avgloss:674.299506 lr:0.0001 time:0.27613704 bpp:3.7050139904022217
+details :  align_psnr : 1.82  psnr : 5.85
+Train Epoch : 01 [ 500/ 512 ( 98%)] Avgloss:603.801630 lr:0.0001 time:0.27414347 bpp:3.6319644451141357
+details :  align_psnr : 2.48  psnr : 6.28
+epoch 2
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 02 [ 100/ 512 ( 20%)] Avgloss:527.155103 lr:0.0001 time:0.281136297029703 bpp:3.5635933876037598
+details :  align_psnr : 3.19  psnr : 6.85
+Train Epoch : 02 [ 200/ 512 ( 39%)] Avgloss:507.535858 lr:0.0001 time:0.27383811 bpp:3.5028748512268066
+details :  align_psnr : 3.72  psnr : 6.97
+Train Epoch : 02 [ 300/ 512 ( 59%)] Avgloss:422.712686 lr:0.0001 time:0.27407514 bpp:3.440904140472412
+details :  align_psnr : 4.38  psnr : 7.75
+Train Epoch : 02 [ 400/ 512 ( 78%)] Avgloss:414.251736 lr:0.0001 time:0.27339186000000004 bpp:3.383366107940674
+details :  align_psnr : 4.85  psnr : 7.77
+Train Epoch : 02 [ 500/ 512 ( 98%)] Avgloss:371.742746 lr:0.0001 time:0.27316102000000003 bpp:3.3246636390686035
+details :  align_psnr : 5.23  psnr : 8.27
+epoch 3
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 03 [ 100/ 512 ( 20%)] Avgloss:341.126108 lr:0.0001 time:0.2805739405940594 bpp:3.2631306648254395
+details :  align_psnr : 5.73  psnr : 8.62
+Train Epoch : 03 [ 200/ 512 ( 39%)] Avgloss:307.144913 lr:0.0001 time:0.27446391 bpp:3.212308168411255
+details :  align_psnr : 6.20  psnr : 9.06
+Train Epoch : 03 [ 300/ 512 ( 59%)] Avgloss:310.003180 lr:0.0001 time:0.27354043 bpp:3.155740976333618
+details :  align_psnr : 6.44  psnr : 8.98
+Train Epoch : 03 [ 400/ 512 ( 78%)] Avgloss:288.273657 lr:0.0001 time:0.27310138 bpp:3.106219530105591
+details :  align_psnr : 6.83  psnr : 9.28
+Train Epoch : 03 [ 500/ 512 ( 98%)] Avgloss:265.109253 lr:0.0001 time:0.27314969 bpp:3.053316593170166
+details :  align_psnr : 7.17  psnr : 9.66
+epoch 4
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 04 [ 100/ 512 ( 20%)] Avgloss:251.459669 lr:0.0001 time:0.2836108712871287 bpp:2.9986159801483154
+details :  align_psnr : 7.52  psnr : 9.87
+Train Epoch : 04 [ 200/ 512 ( 39%)] Avgloss:236.100388 lr:0.0001 time:0.27732899 bpp:2.9481165409088135
+details :  align_psnr : 7.80  psnr : 10.14
+Train Epoch : 04 [ 300/ 512 ( 59%)] Avgloss:222.128845 lr:0.0001 time:0.27444396 bpp:2.9002296924591064
+details :  align_psnr : 8.20  psnr : 10.38
+Train Epoch : 04 [ 400/ 512 ( 78%)] Avgloss:209.245323 lr:0.0001 time:0.2754002 bpp:2.851624011993408
+details :  align_psnr : 8.44  psnr : 10.66
+Train Epoch : 04 [ 500/ 512 ( 98%)] Avgloss:201.053227 lr:0.0001 time:0.27648883 bpp:2.801151752471924
+details :  align_psnr : 8.66  psnr : 10.83
+epoch 5
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 05 [ 100/ 512 ( 20%)] Avgloss:182.438872 lr:0.0001 time:0.2809389702970297 bpp:2.7480106353759766
+details :  align_psnr : 9.04  psnr : 11.24
+Train Epoch : 05 [ 200/ 512 ( 39%)] Avgloss:183.085071 lr:0.0001 time:0.27572891 bpp:2.7017693519592285
+details :  align_psnr : 9.25  psnr : 11.19
+Train Epoch : 05 [ 300/ 512 ( 59%)] Avgloss:158.938039 lr:0.0001 time:0.27493332 bpp:2.654999256134033
+details :  align_psnr : 9.64  psnr : 11.86
+Train Epoch : 05 [ 400/ 512 ( 78%)] Avgloss:164.879657 lr:0.0001 time:0.27510707 bpp:2.6113014221191406
+details :  align_psnr : 9.68  psnr : 11.67
+Train Epoch : 05 [ 500/ 512 ( 98%)] Avgloss:151.005823 lr:0.0001 time:0.27591100999999996 bpp:2.564701557159424
+details :  align_psnr : 9.99  psnr : 12.07
+epoch 6
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 06 [ 100/ 512 ( 20%)] Avgloss:143.594800 lr:0.0001 time:0.28439922772277226 bpp:2.516566038131714
+details :  align_psnr : 10.28  psnr : 12.27
+Train Epoch : 06 [ 200/ 512 ( 39%)] Avgloss:140.946504 lr:0.0001 time:0.27594609999999997 bpp:2.4730758666992188
+details :  align_psnr : 10.50  psnr : 12.34
+Train Epoch : 06 [ 300/ 512 ( 59%)] Avgloss:128.332681 lr:0.0001 time:0.27521229999999997 bpp:2.428867816925049
+details :  align_psnr : 10.74  psnr : 12.78
+Train Epoch : 06 [ 400/ 512 ( 78%)] Avgloss:121.152215 lr:0.0001 time:0.27396335 bpp:2.3865463733673096
+details :  align_psnr : 10.85  psnr : 13.05
+Train Epoch : 06 [ 500/ 512 ( 98%)] Avgloss:110.189902 lr:0.0001 time:0.27385855 bpp:2.3430728912353516
+details :  align_psnr : 11.19  psnr : 13.49
+epoch 7
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 07 [ 100/ 512 ( 20%)] Avgloss:107.499978 lr:0.0001 time:0.282455900990099 bpp:2.296543598175049
+details :  align_psnr : 11.35  psnr : 13.58
+Train Epoch : 07 [ 200/ 512 ( 39%)] Avgloss:113.556456 lr:0.0001 time:0.27433657 bpp:2.2553062438964844
+details :  align_psnr : 11.53  psnr : 13.33
+Train Epoch : 07 [ 300/ 512 ( 59%)] Avgloss:98.510246 lr:0.0001 time:0.27304566 bpp:2.212362766265869
+details :  align_psnr : 11.81  psnr : 13.97
+Train Epoch : 07 [ 400/ 512 ( 78%)] Avgloss:99.564351 lr:0.0001 time:0.27398233 bpp:2.1711673736572266
+details :  align_psnr : 12.04  psnr : 13.88
+Train Epoch : 07 [ 500/ 512 ( 98%)] Avgloss:95.021661 lr:0.0001 time:0.27380353 bpp:2.129669427871704
+details :  align_psnr : 12.17  psnr : 14.07
+epoch 8
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 08 [ 100/ 512 ( 20%)] Avgloss:94.916415 lr:0.0001 time:0.28331751485148515 bpp:2.0846927165985107
+details :  align_psnr : 12.41  psnr : 14.05
+Train Epoch : 08 [ 200/ 512 ( 39%)] Avgloss:88.496815 lr:0.0001 time:0.27614762 bpp:2.0435028076171875
+details :  align_psnr : 12.53  psnr : 14.38
+Train Epoch : 08 [ 300/ 512 ( 59%)] Avgloss:85.526503 lr:0.0001 time:0.27615417999999997 bpp:2.0029306411743164
+details :  align_psnr : 12.72  psnr : 14.55
+Train Epoch : 08 [ 400/ 512 ( 78%)] Avgloss:79.485055 lr:0.0001 time:0.27752864 bpp:1.9614185094833374
+details :  align_psnr : 13.03  psnr : 14.85
+Train Epoch : 08 [ 500/ 512 ( 98%)] Avgloss:75.339677 lr:0.0001 time:0.27507874 bpp:1.9212812185287476
+details :  align_psnr : 13.18  psnr : 15.09
+epoch 9
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 09 [ 100/ 512 ( 20%)] Avgloss:74.048081 lr:0.0001 time:0.2814487227722772 bpp:1.8775790929794312
+details :  align_psnr : 13.47  psnr : 15.15
+Train Epoch : 09 [ 200/ 512 ( 39%)] Avgloss:76.020715 lr:0.0001 time:0.27585448 bpp:1.8397815227508545
+details :  align_psnr : 13.50  psnr : 15.02
+Train Epoch : 09 [ 300/ 512 ( 59%)] Avgloss:63.568171 lr:0.0001 time:0.27555493 bpp:1.799493432044983
+details :  align_psnr : 13.84  psnr : 15.86
+Train Epoch : 09 [ 400/ 512 ( 78%)] Avgloss:67.820972 lr:0.0001 time:0.27550818 bpp:1.7626104354858398
+details :  align_psnr : 13.90  psnr : 15.54
+Train Epoch : 09 [ 500/ 512 ( 98%)] Avgloss:61.689001 lr:0.0001 time:0.27567534 bpp:1.7230498790740967
+details :  align_psnr : 14.24  psnr : 15.96
+epoch 10
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 10 [ 100/ 512 ( 20%)] Avgloss:63.377316 lr:0.0001 time:0.2833410693069307 bpp:1.6786692142486572
+details :  align_psnr : 14.35  psnr : 15.83
+Train Epoch : 10 [ 200/ 512 ( 39%)] Avgloss:54.878691 lr:0.0001 time:0.27673528999999997 bpp:1.6404272317886353
+details :  align_psnr : 14.56  psnr : 16.49
+Train Epoch : 10 [ 300/ 512 ( 59%)] Avgloss:55.744204 lr:0.0001 time:0.27666305 bpp:1.6040366888046265
+details :  align_psnr : 14.74  psnr : 16.40
+Train Epoch : 10 [ 400/ 512 ( 78%)] Avgloss:55.079671 lr:0.0001 time:0.27584917999999997 bpp:1.5671464204788208
+details :  align_psnr : 15.03  psnr : 16.45
+Train Epoch : 10 [ 500/ 512 ( 98%)] Avgloss:51.812701 lr:0.0001 time:0.27542653 bpp:1.531394362449646
+details :  align_psnr : 15.14  psnr : 16.71
+epoch 11
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 11 [ 100/ 512 ( 20%)] Avgloss:46.351860 lr:0.0001 time:0.2830058217821782 bpp:1.4915987253189087
+details :  align_psnr : 15.32  psnr : 17.28
+Train Epoch : 11 [ 200/ 512 ( 39%)] Avgloss:48.577207 lr:0.0001 time:0.27664222 bpp:1.4574605226516724
+details :  align_psnr : 15.51  psnr : 17.00
+Train Epoch : 11 [ 300/ 512 ( 59%)] Avgloss:50.959991 lr:0.0001 time:0.27568497000000003 bpp:1.4230165481567383
+details :  align_psnr : 15.72  psnr : 16.80
+Train Epoch : 11 [ 400/ 512 ( 78%)] Avgloss:43.218155 lr:0.0001 time:0.27633753 bpp:1.388976812362671
+details :  align_psnr : 15.81  psnr : 17.52
+Train Epoch : 11 [ 500/ 512 ( 98%)] Avgloss:39.897575 lr:0.0001 time:0.27520667 bpp:1.3547674417495728
+details :  align_psnr : 16.11  psnr : 17.90
+epoch 12
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 12 [ 100/ 512 ( 20%)] Avgloss:40.926715 lr:0.0001 time:0.2829018316831683 bpp:1.3196163177490234
+details :  align_psnr : 16.20  psnr : 17.74
+Train Epoch : 12 [ 200/ 512 ( 39%)] Avgloss:41.258501 lr:0.0001 time:0.27447386 bpp:1.2889403104782104
+details :  align_psnr : 16.46  psnr : 17.68
+Train Epoch : 12 [ 300/ 512 ( 59%)] Avgloss:34.682233 lr:0.0001 time:0.27540285000000003 bpp:1.2540767192840576
+details :  align_psnr : 16.81  psnr : 18.50
+Train Epoch : 12 [ 400/ 512 ( 78%)] Avgloss:36.264275 lr:0.0001 time:0.27516978999999997 bpp:1.2242329120635986
+details :  align_psnr : 16.92  psnr : 18.27
+Train Epoch : 12 [ 500/ 512 ( 98%)] Avgloss:36.255354 lr:0.0001 time:0.27452402 bpp:1.193679928779602
+details :  align_psnr : 16.98  psnr : 18.29
+epoch 13
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 13 [ 100/ 512 ( 20%)] Avgloss:36.006169 lr:0.0001 time:0.2800977821782178 bpp:1.159841537475586
+details :  align_psnr : 17.26  psnr : 18.29
+Train Epoch : 13 [ 200/ 512 ( 39%)] Avgloss:31.621982 lr:0.0001 time:0.27407529 bpp:1.1311924457550049
+details :  align_psnr : 17.60  psnr : 18.87
+Train Epoch : 13 [ 300/ 512 ( 59%)] Avgloss:31.503656 lr:0.0001 time:0.27418737 bpp:1.1046785116195679
+details :  align_psnr : 17.50  psnr : 18.88
+Train Epoch : 13 [ 400/ 512 ( 78%)] Avgloss:29.271246 lr:0.0001 time:0.27493032 bpp:1.0754693746566772
+details :  align_psnr : 17.84  psnr : 19.17
+Train Epoch : 13 [ 500/ 512 ( 98%)] Avgloss:27.647440 lr:0.0001 time:0.27427345 bpp:1.0470919609069824
+details :  align_psnr : 18.05  psnr : 19.47
+epoch 14
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 14 [ 100/ 512 ( 20%)] Avgloss:27.168454 lr:0.0001 time:0.2829488316831683 bpp:1.0165528059005737
+details :  align_psnr : 18.12  psnr : 19.57
+Train Epoch : 14 [ 200/ 512 ( 39%)] Avgloss:28.084499 lr:0.0001 time:0.2769178 bpp:0.9910041689872742
+details :  align_psnr : 18.49  psnr : 19.38
+Train Epoch : 14 [ 300/ 512 ( 59%)] Avgloss:25.514379 lr:0.0001 time:0.27709297 bpp:0.9650127291679382
+details :  align_psnr : 18.57  psnr : 19.78
+Train Epoch : 14 [ 400/ 512 ( 78%)] Avgloss:24.366073 lr:0.0001 time:0.27744183 bpp:0.9387766122817993
+details :  align_psnr : 18.69  psnr : 20.03
+Train Epoch : 14 [ 500/ 512 ( 98%)] Avgloss:23.391335 lr:0.0001 time:0.27760525 bpp:0.914304256439209
+details :  align_psnr : 18.95  psnr : 20.23
+epoch 15
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 15 [ 100/ 512 ( 20%)] Avgloss:23.316368 lr:0.0001 time:0.2817631287128713 bpp:0.887248158454895
+details :  align_psnr : 18.93  psnr : 20.24
+Train Epoch : 15 [ 200/ 512 ( 39%)] Avgloss:23.093552 lr:0.0001 time:0.27461679 bpp:0.8613061904907227
+details :  align_psnr : 19.29  psnr : 20.18
+Train Epoch : 15 [ 300/ 512 ( 59%)] Avgloss:29.731274 lr:0.0001 time:0.27495361 bpp:0.8390675783157349
+details :  align_psnr : 19.40  psnr : 19.67
+Train Epoch : 15 [ 400/ 512 ( 78%)] Avgloss:20.024489 lr:0.0001 time:0.27386613 bpp:0.8151151537895203
+details :  align_psnr : 19.32  psnr : 20.91
+Train Epoch : 15 [ 500/ 512 ( 98%)] Avgloss:20.018046 lr:0.0001 time:0.27456859 bpp:0.7943586707115173
+details :  align_psnr : 19.58  psnr : 20.88
+epoch 16
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 16 [ 100/ 512 ( 20%)] Avgloss:19.181810 lr:0.0001 time:0.28089967326732673 bpp:0.7724780440330505
+details :  align_psnr : 19.88  psnr : 21.06
+Train Epoch : 16 [ 200/ 512 ( 39%)] Avgloss:21.418577 lr:0.0001 time:0.27449468 bpp:0.7523475885391235
+details :  align_psnr : 19.80  psnr : 20.61
+Train Epoch : 16 [ 300/ 512 ( 59%)] Avgloss:20.285606 lr:0.0001 time:0.27449671999999997 bpp:0.7310701012611389
+details :  align_psnr : 19.93  psnr : 20.92
+Train Epoch : 16 [ 400/ 512 ( 78%)] Avgloss:18.508473 lr:0.0001 time:0.27390279 bpp:0.7129532098770142
+details :  align_psnr : 20.19  psnr : 21.18
+Train Epoch : 16 [ 500/ 512 ( 98%)] Avgloss:15.192077 lr:0.0001 time:0.27426982 bpp:0.6891403794288635
+details :  align_psnr : 20.51  psnr : 22.14
+epoch 17
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 17 [ 100/ 512 ( 20%)] Avgloss:19.083409 lr:0.0001 time:0.279740198019802 bpp:0.6741806268692017
+details :  align_psnr : 20.37  psnr : 21.02
+Train Epoch : 17 [ 200/ 512 ( 39%)] Avgloss:15.552978 lr:0.0001 time:0.27261453 bpp:0.6552871465682983
+details :  align_psnr : 20.79  psnr : 21.93
+Train Epoch : 17 [ 300/ 512 ( 59%)] Avgloss:16.390857 lr:0.0001 time:0.27272606 bpp:0.6402850151062012
+details :  align_psnr : 20.64  psnr : 21.75
+Train Epoch : 17 [ 400/ 512 ( 78%)] Avgloss:16.348628 lr:0.0001 time:0.27343122000000003 bpp:0.6226010322570801
+details :  align_psnr : 20.85  psnr : 21.70
+Train Epoch : 17 [ 500/ 512 ( 98%)] Avgloss:18.334769 lr:0.0001 time:0.27337626 bpp:0.6080408096313477
+details :  align_psnr : 20.92  psnr : 21.20
+epoch 18
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 18 [ 100/ 512 ( 20%)] Avgloss:12.517863 lr:0.0001 time:0.28146047524752477 bpp:0.5884181261062622
+details :  align_psnr : 21.38  psnr : 22.97
+Train Epoch : 18 [ 200/ 512 ( 39%)] Avgloss:14.486156 lr:0.0001 time:0.27558159 bpp:0.574099063873291
+details :  align_psnr : 21.39  psnr : 22.39
+Train Epoch : 18 [ 300/ 512 ( 59%)] Avgloss:14.952393 lr:0.0001 time:0.27610641999999996 bpp:0.5615273714065552
+details :  align_psnr : 21.31  psnr : 22.09
+Train Epoch : 18 [ 400/ 512 ( 78%)] Avgloss:12.099665 lr:0.0001 time:0.27711632999999997 bpp:0.5454676747322083
+details :  align_psnr : 21.63  psnr : 23.14
+Train Epoch : 18 [ 500/ 512 ( 98%)] Avgloss:12.227222 lr:0.0001 time:0.27709014 bpp:0.5327526330947876
+details :  align_psnr : 21.91  psnr : 23.04
+epoch 19
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 19 [ 100/ 512 ( 20%)] Avgloss:11.675901 lr:0.0001 time:0.28126225742574257 bpp:0.5165947079658508
+details :  align_psnr : 21.70  psnr : 23.28
+Train Epoch : 19 [ 200/ 512 ( 39%)] Avgloss:12.929253 lr:0.0001 time:0.27460343000000004 bpp:0.5054630637168884
+details :  align_psnr : 21.88  psnr : 23.05
+Train Epoch : 19 [ 300/ 512 ( 59%)] Avgloss:11.653587 lr:0.0001 time:0.27492169 bpp:0.4927745461463928
+details :  align_psnr : 22.08  psnr : 23.33
+Train Epoch : 19 [ 400/ 512 ( 78%)] Avgloss:11.293709 lr:0.0001 time:0.27472338 bpp:0.4800472855567932
+details :  align_psnr : 22.01  psnr : 23.38
+Train Epoch : 19 [ 500/ 512 ( 98%)] Avgloss:9.463408 lr:0.0001 time:0.2752788 bpp:0.4692220091819763
+details :  align_psnr : 22.37  psnr : 24.27
+epoch 20
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 20 [ 100/ 512 ( 20%)] Avgloss:11.693993 lr:0.0001 time:0.280387900990099 bpp:0.4564008116722107
+details :  align_psnr : 22.37  psnr : 23.39
+Train Epoch : 20 [ 200/ 512 ( 39%)] Avgloss:9.184266 lr:0.0001 time:0.2751163 bpp:0.44449400901794434
+details :  align_psnr : 22.56  psnr : 24.39
+Train Epoch : 20 [ 300/ 512 ( 59%)] Avgloss:9.706763 lr:0.0001 time:0.27549605 bpp:0.43535056710243225
+details :  align_psnr : 22.62  psnr : 24.10
+Train Epoch : 20 [ 400/ 512 ( 78%)] Avgloss:8.955802 lr:0.0001 time:0.27586699 bpp:0.42435795068740845
+details :  align_psnr : 22.72  psnr : 24.51
+Train Epoch : 20 [ 500/ 512 ( 98%)] Avgloss:10.202666 lr:0.0001 time:0.27569461 bpp:0.4170893132686615
+details :  align_psnr : 22.76  psnr : 24.08
+epoch 21
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 21 [ 100/ 512 ( 20%)] Avgloss:10.866326 lr:0.0001 time:0.282839900990099 bpp:0.4008105397224426
+details :  align_psnr : 22.74  psnr : 23.97
+Train Epoch : 21 [ 200/ 512 ( 39%)] Avgloss:8.742949 lr:0.0001 time:0.27615928 bpp:0.3939501643180847
+details :  align_psnr : 22.89  psnr : 24.57
+Train Epoch : 21 [ 300/ 512 ( 59%)] Avgloss:9.546306 lr:0.0001 time:0.27715388 bpp:0.3874698281288147
+details :  align_psnr : 23.26  psnr : 24.14
+Train Epoch : 21 [ 400/ 512 ( 78%)] Avgloss:8.110130 lr:0.0001 time:0.27649217 bpp:0.37662285566329956
+details :  align_psnr : 22.83  psnr : 24.91
+Train Epoch : 21 [ 500/ 512 ( 98%)] Avgloss:7.018386 lr:0.0001 time:0.2767812 bpp:0.36732617020606995
+details :  align_psnr : 23.44  psnr : 25.72
+epoch 22
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 22 [ 100/ 512 ( 20%)] Avgloss:7.290140 lr:0.0001 time:0.28040638613861385 bpp:0.35679104924201965
+details :  align_psnr : 23.28  psnr : 25.41
+Train Epoch : 22 [ 200/ 512 ( 39%)] Avgloss:7.152723 lr:0.0001 time:0.2742969 bpp:0.3545175790786743
+details :  align_psnr : 23.67  psnr : 25.48
+Train Epoch : 22 [ 300/ 512 ( 59%)] Avgloss:6.808712 lr:0.0001 time:0.27429797 bpp:0.3414151966571808
+details :  align_psnr : 23.92  psnr : 25.87
+Train Epoch : 22 [ 400/ 512 ( 78%)] Avgloss:6.705603 lr:0.0001 time:0.27379552 bpp:0.3325973153114319
+details :  align_psnr : 23.93  psnr : 25.72
+Train Epoch : 22 [ 500/ 512 ( 98%)] Avgloss:54.796235 lr:0.0001 time:0.27415588 bpp:0.3356890082359314
+details :  align_psnr : 23.31  psnr : 23.41
+epoch 23
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 23 [ 100/ 512 ( 20%)] Avgloss:229.121931 lr:0.0001 time:0.2774740693069307 bpp:8.460319519042969
+details :  align_psnr : 9.50  psnr : 11.08
+Train Epoch : 23 [ 200/ 512 ( 39%)] Avgloss:95.181316 lr:0.0001 time:0.27083051999999996 bpp:8.419267654418945
+details :  align_psnr : 10.82  psnr : 14.71
+Train Epoch : 23 [ 300/ 512 ( 59%)] Avgloss:72.343597 lr:0.0001 time:0.27132859 bpp:8.414064407348633
+details :  align_psnr : 11.56  psnr : 16.19
+Train Epoch : 23 [ 400/ 512 ( 78%)] Avgloss:63.737690 lr:0.0001 time:0.27104026000000003 bpp:8.411214828491211
+details :  align_psnr : 12.38  psnr : 16.75
+Train Epoch : 23 [ 500/ 512 ( 98%)] Avgloss:59.305193 lr:0.0001 time:0.270467 bpp:8.40904426574707
+details :  align_psnr : 12.95  psnr : 17.09
+epoch 24
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 24 [ 100/ 512 ( 20%)] Avgloss:45.239453 lr:0.0001 time:0.2784320891089109 bpp:8.406953811645508
+details :  align_psnr : 13.78  psnr : 18.64
+Train Epoch : 24 [ 200/ 512 ( 39%)] Avgloss:47.375856 lr:0.0001 time:0.27278354 bpp:8.405572891235352
+details :  align_psnr : 14.23  psnr : 18.21
+Train Epoch : 24 [ 300/ 512 ( 59%)] Avgloss:42.592485 lr:0.0001 time:0.27316985 bpp:8.404230117797852
+details :  align_psnr : 14.85  psnr : 18.77
+Train Epoch : 24 [ 400/ 512 ( 78%)] Avgloss:38.629336 lr:0.0001 time:0.27369415 bpp:8.402933120727539
+details :  align_psnr : 15.41  psnr : 19.29
+Train Epoch : 24 [ 500/ 512 ( 98%)] Avgloss:35.898913 lr:0.0001 time:0.27325425 bpp:8.402316093444824
+details :  align_psnr : 15.83  psnr : 19.71
+epoch 25
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 25 [ 100/ 512 ( 20%)] Avgloss:34.587067 lr:0.0001 time:0.279193900990099 bpp:8.401445388793945
+details :  align_psnr : 16.37  psnr : 19.87
+Train Epoch : 25 [ 200/ 512 ( 39%)] Avgloss:32.507142 lr:0.0001 time:0.27250725 bpp:8.400188446044922
+details :  align_psnr : 16.69  psnr : 20.20
+Train Epoch : 25 [ 300/ 512 ( 59%)] Avgloss:29.918865 lr:0.0001 time:0.27283376 bpp:8.39954948425293
+details :  align_psnr : 17.01  psnr : 20.75
+Train Epoch : 25 [ 400/ 512 ( 78%)] Avgloss:28.521223 lr:0.0001 time:0.27274853 bpp:8.398388862609863
+details :  align_psnr : 17.35  psnr : 21.11
+Train Epoch : 25 [ 500/ 512 ( 98%)] Avgloss:28.901672 lr:0.0001 time:0.27480245 bpp:8.398004531860352
+details :  align_psnr : 17.58  psnr : 20.87
+epoch 26
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 26 [ 100/ 512 ( 20%)] Avgloss:27.213457 lr:0.0001 time:0.2798885643564356 bpp:8.396818161010742
+details :  align_psnr : 17.88  psnr : 21.33
+Train Epoch : 26 [ 200/ 512 ( 39%)] Avgloss:26.113942 lr:0.0001 time:0.272593 bpp:8.395204544067383
+details :  align_psnr : 18.05  psnr : 21.54
+Train Epoch : 26 [ 300/ 512 ( 59%)] Avgloss:24.827450 lr:0.0001 time:0.27265336 bpp:8.394635200500488
+details :  align_psnr : 18.50  psnr : 21.87
+Train Epoch : 26 [ 400/ 512 ( 78%)] Avgloss:23.425735 lr:0.0001 time:0.27263555 bpp:8.394213676452637
+details :  align_psnr : 18.63  psnr : 22.32
+Train Epoch : 26 [ 500/ 512 ( 98%)] Avgloss:21.509331 lr:0.0001 time:0.27229789 bpp:8.39216136932373
+details :  align_psnr : 18.96  psnr : 22.94
+epoch 27
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 27 [ 100/ 512 ( 20%)] Avgloss:22.750439 lr:0.0001 time:0.28065558415841585 bpp:8.391538619995117
+details :  align_psnr : 19.17  psnr : 22.46
+Train Epoch : 27 [ 200/ 512 ( 39%)] Avgloss:20.194778 lr:0.0001 time:0.27345314 bpp:8.39087200164795
+details :  align_psnr : 19.44  psnr : 23.40
+Train Epoch : 27 [ 300/ 512 ( 59%)] Avgloss:21.013480 lr:0.0001 time:0.27379051 bpp:8.3904447555542
+details :  align_psnr : 19.60  psnr : 23.00
+Train Epoch : 27 [ 400/ 512 ( 78%)] Avgloss:20.551582 lr:0.0001 time:0.27464244 bpp:8.389867782592773
+details :  align_psnr : 19.85  psnr : 23.15
+Train Epoch : 27 [ 500/ 512 ( 98%)] Avgloss:20.224333 lr:0.0001 time:0.27471762 bpp:8.389839172363281
+details :  align_psnr : 20.04  psnr : 23.35
+epoch 28
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 28 [ 100/ 512 ( 20%)] Avgloss:19.197478 lr:0.0001 time:0.28178410891089106 bpp:8.388301849365234
+details :  align_psnr : 20.40  psnr : 23.63
+Train Epoch : 28 [ 200/ 512 ( 39%)] Avgloss:18.160190 lr:0.0001 time:0.27493686 bpp:8.3876371383667
+details :  align_psnr : 20.55  psnr : 24.17
+Train Epoch : 28 [ 300/ 512 ( 59%)] Avgloss:17.609620 lr:0.0001 time:0.27443757 bpp:8.388322830200195
+details :  align_psnr : 20.71  psnr : 24.39
+Train Epoch : 28 [ 400/ 512 ( 78%)] Avgloss:16.920510 lr:0.0001 time:0.27389514 bpp:8.386528015136719
+details :  align_psnr : 21.16  psnr : 24.80
+Train Epoch : 28 [ 500/ 512 ( 98%)] Avgloss:17.482749 lr:0.0001 time:0.27479806 bpp:8.387727737426758
+details :  align_psnr : 21.19  psnr : 24.43
+epoch 29
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 29 [ 100/ 512 ( 20%)] Avgloss:17.056210 lr:0.0001 time:0.27932840594059405 bpp:8.386940002441406
+details :  align_psnr : 21.38  psnr : 24.81
+Train Epoch : 29 [ 200/ 512 ( 39%)] Avgloss:16.642527 lr:0.0001 time:0.27320619 bpp:8.386770248413086
+details :  align_psnr : 21.68  psnr : 24.82
+Train Epoch : 29 [ 300/ 512 ( 59%)] Avgloss:16.065610 lr:0.0001 time:0.27342647 bpp:8.385534286499023
+details :  align_psnr : 21.80  psnr : 25.20
+Train Epoch : 29 [ 400/ 512 ( 78%)] Avgloss:15.635378 lr:0.0001 time:0.27332139 bpp:8.385981559753418
+details :  align_psnr : 22.16  psnr : 25.38
+Train Epoch : 29 [ 500/ 512 ( 98%)] Avgloss:15.826689 lr:0.0001 time:0.27224153 bpp:8.384868621826172
+details :  align_psnr : 22.38  psnr : 25.35
+epoch 30
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 30 [ 100/ 512 ( 20%)] Avgloss:15.245706 lr:0.0001 time:0.27586241584158416 bpp:8.385358810424805
+details :  align_psnr : 22.56  psnr : 25.60
+Train Epoch : 30 [ 200/ 512 ( 39%)] Avgloss:14.605044 lr:0.0001 time:0.27048487 bpp:8.38434886932373
+details :  align_psnr : 22.85  psnr : 26.04
+Train Epoch : 30 [ 300/ 512 ( 59%)] Avgloss:15.498804 lr:0.0001 time:0.27006504 bpp:8.385245323181152
+details :  align_psnr : 22.74  psnr : 25.45
+Train Epoch : 30 [ 400/ 512 ( 78%)] Avgloss:14.664319 lr:0.0001 time:0.27032712 bpp:8.38393497467041
+details :  align_psnr : 23.20  psnr : 25.98
+Train Epoch : 30 [ 500/ 512 ( 98%)] Avgloss:14.806130 lr:0.0001 time:0.27003658999999997 bpp:8.38363265991211
+details :  align_psnr : 23.21  psnr : 25.88
+epoch 31
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 31 [ 100/ 512 ( 20%)] Avgloss:13.759414 lr:0.0001 time:0.27559547524752476 bpp:8.3821382522583
+details :  align_psnr : 23.54  psnr : 26.71
+Train Epoch : 31 [ 200/ 512 ( 39%)] Avgloss:13.741174 lr:0.0001 time:0.27004493 bpp:8.38215446472168
+details :  align_psnr : 23.80  psnr : 26.68
+Train Epoch : 31 [ 300/ 512 ( 59%)] Avgloss:13.577323 lr:0.0001 time:0.27022586 bpp:8.381953239440918
+details :  align_psnr : 23.96  psnr : 26.76
+Train Epoch : 31 [ 400/ 512 ( 78%)] Avgloss:13.592066 lr:0.0001 time:0.2696332 bpp:8.380531311035156
+details :  align_psnr : 24.22  psnr : 26.69
+Train Epoch : 31 [ 500/ 512 ( 98%)] Avgloss:12.987396 lr:0.0001 time:0.27027713999999997 bpp:8.381074905395508
+details :  align_psnr : 24.40  psnr : 27.38
+epoch 32
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 32 [ 100/ 512 ( 20%)] Avgloss:12.809767 lr:0.0001 time:0.27791629702970294 bpp:8.380375862121582
+details :  align_psnr : 24.49  psnr : 27.56
+Train Epoch : 32 [ 200/ 512 ( 39%)] Avgloss:12.981225 lr:0.0001 time:0.27184943 bpp:8.380484580993652
+details :  align_psnr : 24.53  psnr : 27.29
+Train Epoch : 32 [ 300/ 512 ( 59%)] Avgloss:12.214798 lr:0.0001 time:0.27237883 bpp:8.378324508666992
+details :  align_psnr : 25.07  psnr : 28.13
+Train Epoch : 32 [ 400/ 512 ( 78%)] Avgloss:13.478064 lr:0.0001 time:0.27232217999999997 bpp:8.3814058303833
+details :  align_psnr : 24.59  psnr : 26.82
+Train Epoch : 32 [ 500/ 512 ( 98%)] Avgloss:12.799970 lr:0.0001 time:0.2718263 bpp:8.37867259979248
+details :  align_psnr : 24.77  psnr : 27.46
+epoch 33
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 33 [ 100/ 512 ( 20%)] Avgloss:13.558378 lr:0.0001 time:0.2781792475247525 bpp:8.379514694213867
+details :  align_psnr : 24.90  psnr : 26.71
+Train Epoch : 33 [ 200/ 512 ( 39%)] Avgloss:12.863588 lr:0.0001 time:0.27302715 bpp:8.379327774047852
+details :  align_psnr : 25.10  psnr : 27.32
+Train Epoch : 33 [ 300/ 512 ( 59%)] Avgloss:12.260010 lr:0.0001 time:0.27314664 bpp:8.377278327941895
+details :  align_psnr : 25.35  psnr : 28.00
+Train Epoch : 33 [ 400/ 512 ( 78%)] Avgloss:11.925943 lr:0.0001 time:0.2736052 bpp:8.375082015991211
+details :  align_psnr : 25.73  psnr : 28.42
+Train Epoch : 33 [ 500/ 512 ( 98%)] Avgloss:11.806794 lr:0.0001 time:0.27360507 bpp:8.376287460327148
+details :  align_psnr : 25.74  psnr : 28.56
+epoch 34
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 34 [ 100/ 512 ( 20%)] Avgloss:12.048706 lr:0.0001 time:0.27916219801980197 bpp:8.374518394470215
+details :  align_psnr : 26.03  psnr : 28.28
+Train Epoch : 34 [ 200/ 512 ( 39%)] Avgloss:11.828295 lr:0.0001 time:0.27293309 bpp:8.374772071838379
+details :  align_psnr : 25.87  psnr : 28.53
+Train Epoch : 34 [ 300/ 512 ( 59%)] Avgloss:12.024761 lr:0.0001 time:0.27254858 bpp:8.375635147094727
+details :  align_psnr : 25.71  psnr : 28.33
+Train Epoch : 34 [ 400/ 512 ( 78%)] Avgloss:11.621134 lr:0.0001 time:0.27305383 bpp:8.372812271118164
+details :  align_psnr : 26.20  psnr : 28.82
+Train Epoch : 34 [ 500/ 512 ( 98%)] Avgloss:11.811268 lr:0.0001 time:0.27319728 bpp:8.372018814086914
+details :  align_psnr : 26.12  psnr : 28.57
+epoch 35
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 35 [ 100/ 512 ( 20%)] Avgloss:11.336828 lr:0.0001 time:0.2786262871287129 bpp:8.370710372924805
+details :  align_psnr : 26.41  psnr : 29.29
+Train Epoch : 35 [ 200/ 512 ( 39%)] Avgloss:11.793876 lr:0.0001 time:0.27336135 bpp:8.369752883911133
+details :  align_psnr : 26.22  psnr : 28.54
+Train Epoch : 35 [ 300/ 512 ( 59%)] Avgloss:11.189852 lr:0.0001 time:0.27307853000000004 bpp:8.369349479675293
+details :  align_psnr : 26.36  psnr : 29.51
+Train Epoch : 35 [ 400/ 512 ( 78%)] Avgloss:11.350570 lr:0.0001 time:0.27202893 bpp:8.368965148925781
+details :  align_psnr : 26.22  psnr : 29.24
+Train Epoch : 35 [ 500/ 512 ( 98%)] Avgloss:11.610416 lr:0.0001 time:0.27181436999999997 bpp:8.368158340454102
+details :  align_psnr : 26.64  psnr : 28.72
+epoch 36
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 36 [ 100/ 512 ( 20%)] Avgloss:11.402506 lr:0.0001 time:0.2793093564356436 bpp:8.367314338684082
+details :  align_psnr : 26.63  psnr : 29.18
+Train Epoch : 36 [ 200/ 512 ( 39%)] Avgloss:11.022779 lr:0.0001 time:0.27381991 bpp:8.366350173950195
+details :  align_psnr : 26.82  psnr : 29.67
+Train Epoch : 36 [ 300/ 512 ( 59%)] Avgloss:11.208078 lr:0.0001 time:0.27354526 bpp:8.36320686340332
+details :  align_psnr : 26.75  psnr : 29.54
+Train Epoch : 36 [ 400/ 512 ( 78%)] Avgloss:11.449225 lr:0.0001 time:0.27408506 bpp:8.363439559936523
+details :  align_psnr : 26.83  psnr : 29.27
+Train Epoch : 36 [ 500/ 512 ( 98%)] Avgloss:10.922945 lr:0.0001 time:0.27244852 bpp:8.361841201782227
+details :  align_psnr : 26.94  psnr : 29.90
+epoch 37
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 37 [ 100/ 512 ( 20%)] Avgloss:10.688095 lr:0.0001 time:0.2765211881188119 bpp:8.360160827636719
+details :  align_psnr : 27.32  psnr : 30.37
+Train Epoch : 37 [ 200/ 512 ( 39%)] Avgloss:10.831308 lr:0.0001 time:0.26991751 bpp:8.358830451965332
+details :  align_psnr : 27.28  psnr : 30.16
+Train Epoch : 37 [ 300/ 512 ( 59%)] Avgloss:11.015147 lr:0.0001 time:0.27012376 bpp:8.3600435256958
+details :  align_psnr : 26.90  psnr : 29.88
+Train Epoch : 37 [ 400/ 512 ( 78%)] Avgloss:11.096833 lr:0.0001 time:0.27079248 bpp:8.36013126373291
+details :  align_psnr : 27.29  psnr : 29.66
+Train Epoch : 37 [ 500/ 512 ( 98%)] Avgloss:10.278168 lr:0.0001 time:0.27036495 bpp:8.355337142944336
+details :  align_psnr : 27.58  psnr : 31.30
+epoch 38
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 38 [ 100/ 512 ( 20%)] Avgloss:10.677104 lr:0.0001 time:0.27777366336633663 bpp:8.356240272521973
+details :  align_psnr : 27.48  psnr : 30.51
+Train Epoch : 38 [ 200/ 512 ( 39%)] Avgloss:10.451750 lr:0.0001 time:0.27188121 bpp:8.355074882507324
+details :  align_psnr : 27.62  psnr : 30.88
+Train Epoch : 38 [ 300/ 512 ( 59%)] Avgloss:10.194133 lr:0.0001 time:0.27274331 bpp:8.35200309753418
+details :  align_psnr : 27.83  psnr : 31.43
+Train Epoch : 38 [ 400/ 512 ( 78%)] Avgloss:10.729487 lr:0.0001 time:0.2734976 bpp:8.353947639465332
+details :  align_psnr : 27.71  psnr : 30.38
+Train Epoch : 38 [ 500/ 512 ( 98%)] Avgloss:10.655021 lr:0.0001 time:0.272784 bpp:8.3524751663208
+details :  align_psnr : 27.78  psnr : 30.56
+epoch 39
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 39 [ 100/ 512 ( 20%)] Avgloss:10.108755 lr:0.0001 time:0.27910849504950497 bpp:8.352470397949219
+details :  align_psnr : 27.57  psnr : 31.70
+Train Epoch : 39 [ 200/ 512 ( 39%)] Avgloss:10.387346 lr:0.0001 time:0.27267513 bpp:8.350549697875977
+details :  align_psnr : 27.75  psnr : 31.01
+Train Epoch : 39 [ 300/ 512 ( 59%)] Avgloss:10.291206 lr:0.0001 time:0.27385207 bpp:8.348541259765625
+details :  align_psnr : 28.06  psnr : 31.15
+Train Epoch : 39 [ 400/ 512 ( 78%)] Avgloss:10.241744 lr:0.0001 time:0.27148214 bpp:8.347795486450195
+details :  align_psnr : 28.13  psnr : 31.55
+Train Epoch : 39 [ 500/ 512 ( 98%)] Avgloss:10.280475 lr:0.0001 time:0.27284862 bpp:8.346817970275879
+details :  align_psnr : 28.14  psnr : 31.50
+epoch 40
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 40 [ 100/ 512 ( 20%)] Avgloss:10.129259 lr:0.0001 time:0.2798020495049505 bpp:8.345895767211914
+details :  align_psnr : 28.25  psnr : 31.77
+Train Epoch : 40 [ 200/ 512 ( 39%)] Avgloss:9.929987 lr:0.0001 time:0.27301515 bpp:8.343277931213379
+details :  align_psnr : 28.65  psnr : 32.17
+Train Epoch : 40 [ 300/ 512 ( 59%)] Avgloss:10.210666 lr:0.0001 time:0.274462 bpp:8.344944953918457
+details :  align_psnr : 28.16  psnr : 31.55
+Train Epoch : 40 [ 400/ 512 ( 78%)] Avgloss:9.873310 lr:0.0001 time:0.27400079 bpp:8.34368896484375
+details :  align_psnr : 28.32  psnr : 32.30
+Train Epoch : 40 [ 500/ 512 ( 98%)] Avgloss:10.266476 lr:0.0001 time:0.27417167 bpp:8.343653678894043
+details :  align_psnr : 28.05  psnr : 31.20
+epoch 41
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 41 [ 100/ 512 ( 20%)] Avgloss:9.836342 lr:0.0001 time:0.2787789306930693 bpp:8.340597152709961
+details :  align_psnr : 28.90  psnr : 32.39
+Train Epoch : 41 [ 200/ 512 ( 39%)] Avgloss:9.855573 lr:0.0001 time:0.27418063 bpp:8.340655326843262
+details :  align_psnr : 28.80  psnr : 32.27
+Train Epoch : 41 [ 300/ 512 ( 59%)] Avgloss:10.011482 lr:0.0001 time:0.27269652 bpp:8.340678215026855
+details :  align_psnr : 28.65  psnr : 32.45
+Train Epoch : 41 [ 400/ 512 ( 78%)] Avgloss:9.641673 lr:0.0001 time:0.27240078 bpp:8.338460922241211
+details :  align_psnr : 29.06  psnr : 33.03
+Train Epoch : 41 [ 500/ 512 ( 98%)] Avgloss:11.336943 lr:0.0001 time:0.27176412 bpp:8.337629318237305
+details :  align_psnr : 28.29  psnr : 31.16
+epoch 42
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 42 [ 100/ 512 ( 20%)] Avgloss:9.490482 lr:0.0001 time:0.2784287920792079 bpp:8.336248397827148
+details :  align_psnr : 29.31  psnr : 33.67
+Train Epoch : 42 [ 200/ 512 ( 39%)] Avgloss:9.430833 lr:0.0001 time:0.27203066 bpp:8.335977554321289
+details :  align_psnr : 29.19  psnr : 33.99
+Train Epoch : 42 [ 300/ 512 ( 59%)] Avgloss:9.617576 lr:0.0001 time:0.27255478 bpp:8.335893630981445
+details :  align_psnr : 29.24  psnr : 33.20
+Train Epoch : 42 [ 400/ 512 ( 78%)] Avgloss:9.603009 lr:0.0001 time:0.27299574 bpp:8.335853576660156
+details :  align_psnr : 29.30  psnr : 33.33
+Train Epoch : 42 [ 500/ 512 ( 98%)] Avgloss:9.401577 lr:0.0001 time:0.27366889 bpp:8.334019660949707
+details :  align_psnr : 29.29  psnr : 34.23
+epoch 43
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 43 [ 100/ 512 ( 20%)] Avgloss:9.328724 lr:0.0001 time:0.2794179603960396 bpp:8.333635330200195
+details :  align_psnr : 29.61  psnr : 34.37
+Train Epoch : 43 [ 200/ 512 ( 39%)] Avgloss:9.523592 lr:0.0001 time:0.27357534 bpp:8.33358097076416
+details :  align_psnr : 29.44  psnr : 33.57
+Train Epoch : 43 [ 300/ 512 ( 59%)] Avgloss:9.228202 lr:0.0001 time:0.27463475 bpp:8.331168174743652
+details :  align_psnr : 30.16  psnr : 34.87
+Train Epoch : 43 [ 400/ 512 ( 78%)] Avgloss:9.471539 lr:0.0001 time:0.27369481 bpp:8.33172607421875
+details :  align_psnr : 29.68  psnr : 33.71
+Train Epoch : 43 [ 500/ 512 ( 98%)] Avgloss:9.513304 lr:0.0001 time:0.27293275 bpp:8.331331253051758
+details :  align_psnr : 29.60  psnr : 33.71
+epoch 44
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 44 [ 100/ 512 ( 20%)] Avgloss:9.360205 lr:0.0001 time:0.2791072673267327 bpp:8.330596923828125
+details :  align_psnr : 29.78  psnr : 34.12
+Train Epoch : 44 [ 200/ 512 ( 39%)] Avgloss:9.271733 lr:0.0001 time:0.27225471 bpp:8.330729484558105
+details :  align_psnr : 29.98  psnr : 34.57
+Train Epoch : 44 [ 300/ 512 ( 59%)] Avgloss:9.236958 lr:0.0001 time:0.27232362 bpp:8.328288078308105
+details :  align_psnr : 30.34  psnr : 34.78
+Train Epoch : 44 [ 400/ 512 ( 78%)] Avgloss:9.399831 lr:0.0001 time:0.27285983 bpp:8.330223083496094
+details :  align_psnr : 29.77  psnr : 34.29
+Train Epoch : 44 [ 500/ 512 ( 98%)] Avgloss:9.135443 lr:0.0001 time:0.273481 bpp:8.327898025512695
+details :  align_psnr : 30.57  psnr : 35.55
+epoch 45
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 45 [ 100/ 512 ( 20%)] Avgloss:9.256061 lr:0.0001 time:0.27715567326732676 bpp:8.327016830444336
+details :  align_psnr : 30.37  psnr : 34.61
+Train Epoch : 45 [ 200/ 512 ( 39%)] Avgloss:9.298420 lr:0.0001 time:0.27134119 bpp:8.326835632324219
+details :  align_psnr : 30.25  psnr : 34.53
+Train Epoch : 45 [ 300/ 512 ( 59%)] Avgloss:9.148575 lr:0.0001 time:0.27200591 bpp:8.32613754272461
+details :  align_psnr : 30.51  psnr : 35.23
+Train Epoch : 45 [ 400/ 512 ( 78%)] Avgloss:9.219518 lr:0.0001 time:0.27266912 bpp:8.326288223266602
+details :  align_psnr : 30.42  psnr : 34.90
+Train Epoch : 45 [ 500/ 512 ( 98%)] Avgloss:9.189133 lr:0.0001 time:0.2712215 bpp:8.325228691101074
+details :  align_psnr : 30.37  psnr : 35.13
+epoch 46
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 46 [ 100/ 512 ( 20%)] Avgloss:9.207572 lr:0.0001 time:0.27746780198019805 bpp:8.32497501373291
+details :  align_psnr : 30.77  psnr : 35.17
+Train Epoch : 46 [ 200/ 512 ( 39%)] Avgloss:8.933217 lr:0.0001 time:0.27071294 bpp:8.32362174987793
+details :  align_psnr : 30.89  psnr : 36.77
+Train Epoch : 46 [ 300/ 512 ( 59%)] Avgloss:9.223126 lr:0.0001 time:0.26900956 bpp:8.324066162109375
+details :  align_psnr : 30.80  psnr : 35.90
+Train Epoch : 46 [ 400/ 512 ( 78%)] Avgloss:8.929267 lr:0.0001 time:0.26921339 bpp:8.322854995727539
+details :  align_psnr : 31.17  psnr : 36.70
+Train Epoch : 46 [ 500/ 512 ( 98%)] Avgloss:9.116882 lr:0.0001 time:0.26947988 bpp:8.323033332824707
+details :  align_psnr : 30.92  psnr : 35.28
+epoch 47
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 47 [ 100/ 512 ( 20%)] Avgloss:9.050059 lr:0.0001 time:0.2767707227722772 bpp:8.32187557220459
+details :  align_psnr : 31.46  psnr : 35.90
+Train Epoch : 47 [ 200/ 512 ( 39%)] Avgloss:8.852700 lr:0.0001 time:0.27158804 bpp:8.321484565734863
+details :  align_psnr : 31.48  psnr : 37.39
+Train Epoch : 47 [ 300/ 512 ( 59%)] Avgloss:9.165605 lr:0.0001 time:0.27193047 bpp:8.3213529586792
+details :  align_psnr : 31.02  psnr : 35.53
+Train Epoch : 47 [ 400/ 512 ( 78%)] Avgloss:8.988984 lr:0.0001 time:0.2710995 bpp:8.321114540100098
+details :  align_psnr : 31.40  psnr : 36.58
+Train Epoch : 47 [ 500/ 512 ( 98%)] Avgloss:9.316876 lr:0.0001 time:0.27040873 bpp:8.320363998413086
+details :  align_psnr : 31.23  psnr : 35.01
+epoch 48
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 48 [ 100/ 512 ( 20%)] Avgloss:8.832802 lr:0.0001 time:0.279831 bpp:8.319794654846191
+details :  align_psnr : 31.88  psnr : 37.56
+Train Epoch : 48 [ 200/ 512 ( 39%)] Avgloss:8.899898 lr:0.0001 time:0.27352311 bpp:8.319781303405762
+details :  align_psnr : 31.45  psnr : 37.36
+Train Epoch : 48 [ 300/ 512 ( 59%)] Avgloss:8.895147 lr:0.0001 time:0.27316819 bpp:8.319196701049805
+details :  align_psnr : 31.83  psnr : 36.99
+Train Epoch : 48 [ 400/ 512 ( 78%)] Avgloss:8.859162 lr:0.0001 time:0.27173372 bpp:8.319208145141602
+details :  align_psnr : 31.38  psnr : 37.30
+Train Epoch : 48 [ 500/ 512 ( 98%)] Avgloss:8.876758 lr:0.0001 time:0.27151632 bpp:8.318794250488281
+details :  align_psnr : 31.59  psnr : 37.14
+epoch 49
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 49 [ 100/ 512 ( 20%)] Avgloss:8.847961 lr:0.0001 time:0.28041767326732675 bpp:8.318534851074219
+details :  align_psnr : 31.57  psnr : 37.47
+Train Epoch : 49 [ 200/ 512 ( 39%)] Avgloss:8.757542 lr:0.0001 time:0.27325041 bpp:8.31773853302002
+details :  align_psnr : 32.24  psnr : 38.29
+Train Epoch : 49 [ 300/ 512 ( 59%)] Avgloss:8.947326 lr:0.0001 time:0.26966479 bpp:8.317964553833008
+details :  align_psnr : 31.48  psnr : 36.44
+Train Epoch : 49 [ 400/ 512 ( 78%)] Avgloss:8.799112 lr:0.0001 time:0.27274664000000004 bpp:8.317529678344727
+details :  align_psnr : 31.81  psnr : 37.99
+Train Epoch : 49 [ 500/ 512 ( 98%)] Avgloss:9.048581 lr:0.0001 time:0.27308874 bpp:8.317103385925293
+details :  align_psnr : 31.96  psnr : 36.15
+epoch 50
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 50 [ 100/ 512 ( 20%)] Avgloss:8.756051 lr:0.0001 time:0.27729856435643563 bpp:8.315546035766602
+details :  align_psnr : 31.39  psnr : 37.17
+Train Epoch : 50 [ 200/ 512 ( 39%)] Avgloss:8.735587 lr:0.0001 time:0.27357236 bpp:8.315109252929688
+details :  align_psnr : 30.91  psnr : 37.66
+Train Epoch : 50 [ 300/ 512 ( 59%)] Avgloss:8.615715 lr:0.0001 time:0.27073997 bpp:8.314715385437012
+details :  align_psnr : 30.27  psnr : 38.54
+Train Epoch : 50 [ 400/ 512 ( 78%)] Avgloss:8.619663 lr:0.0001 time:0.27267558000000003 bpp:8.314481735229492
+details :  align_psnr : 30.50  psnr : 38.50
+Train Epoch : 50 [ 500/ 512 ( 98%)] Avgloss:8.576950 lr:0.0001 time:0.27263729000000003 bpp:8.314143180847168
+details :  align_psnr : 30.33  psnr : 39.08
+epoch 51
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 51 [ 100/ 512 ( 20%)] Avgloss:8.585435 lr:0.0001 time:0.2778373465346535 bpp:8.313904762268066
+details :  align_psnr : 29.93  psnr : 38.95
+Train Epoch : 51 [ 200/ 512 ( 39%)] Avgloss:418.522094 lr:0.0001 time:0.27268571 bpp:8.821561813354492
+details :  align_psnr : 13.86  psnr : 18.34
+Train Epoch : 51 [ 300/ 512 ( 59%)] Avgloss:19.549761 lr:0.0001 time:0.27392791 bpp:8.542917251586914
+details :  align_psnr : 10.79  psnr : 22.76
+Train Epoch : 51 [ 400/ 512 ( 78%)] Avgloss:16.840386 lr:0.0001 time:0.27376845 bpp:8.427423477172852
+details :  align_psnr : 10.92  psnr : 23.97
+Train Epoch : 51 [ 500/ 512 ( 98%)] Avgloss:8.871584 lr:0.0001 time:0.27288255 bpp:2.1093857288360596
+details :  align_psnr : 10.93  psnr : 24.87
+epoch 52
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 52 [ 100/ 512 ( 20%)] Avgloss:6.162260 lr:0.0001 time:0.27937320792079207 bpp:0.32873430848121643
+details :  align_psnr : 10.94  psnr : 25.54
+Train Epoch : 52 [ 200/ 512 ( 39%)] Avgloss:5.121820 lr:0.0001 time:0.27418634999999997 bpp:0.30042213201522827
+details :  align_psnr : 10.86  psnr : 26.36
+Train Epoch : 52 [ 300/ 512 ( 59%)] Avgloss:4.078931 lr:0.0001 time:0.27287883 bpp:0.28111934661865234
+details :  align_psnr : 11.05  psnr : 27.36
+Train Epoch : 52 [ 400/ 512 ( 78%)] Avgloss:4.741881 lr:0.0001 time:0.27500735 bpp:0.2668677270412445
+details :  align_psnr : 11.02  psnr : 26.68
+Train Epoch : 52 [ 500/ 512 ( 98%)] Avgloss:4.294116 lr:0.0001 time:0.27348962 bpp:0.25501006841659546
+details :  align_psnr : 10.97  psnr : 27.10
+epoch 53
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 53 [ 100/ 512 ( 20%)] Avgloss:3.736928 lr:0.0001 time:0.27864555445544553 bpp:0.24386778473854065
+details :  align_psnr : 10.94  psnr : 27.73
+Train Epoch : 53 [ 200/ 512 ( 39%)] Avgloss:3.406876 lr:0.0001 time:0.27322321 bpp:0.23431484401226044
+details :  align_psnr : 10.92  psnr : 28.12
+Train Epoch : 53 [ 300/ 512 ( 59%)] Avgloss:3.257391 lr:0.0001 time:0.27298863 bpp:0.22610299289226532
+details :  align_psnr : 10.87  psnr : 28.39
+Train Epoch : 53 [ 400/ 512 ( 78%)] Avgloss:2.819275 lr:0.0001 time:0.27340905 bpp:0.21803343296051025
+details :  align_psnr : 10.85  psnr : 28.99
+Train Epoch : 53 [ 500/ 512 ( 98%)] Avgloss:2.728684 lr:0.0001 time:0.27445144 bpp:0.2105848342180252
+details :  align_psnr : 10.94  psnr : 29.18
+epoch 54
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 54 [ 100/ 512 ( 20%)] Avgloss:2.496530 lr:0.0001 time:0.2795179207920792 bpp:0.20306476950645447
+details :  align_psnr : 10.87  psnr : 29.57
+Train Epoch : 54 [ 200/ 512 ( 39%)] Avgloss:2.312045 lr:0.0001 time:0.27006405 bpp:0.19653357565402985
+details :  align_psnr : 10.93  psnr : 29.92
+Train Epoch : 54 [ 300/ 512 ( 59%)] Avgloss:2.375294 lr:0.0001 time:0.26973489 bpp:0.19042107462882996
+details :  align_psnr : 10.76  psnr : 29.79
+Train Epoch : 54 [ 400/ 512 ( 78%)] Avgloss:2.374679 lr:0.0001 time:0.27010067 bpp:0.18433615565299988
+details :  align_psnr : 10.79  psnr : 29.86
+Train Epoch : 54 [ 500/ 512 ( 98%)] Avgloss:2.307178 lr:0.0001 time:0.2703723 bpp:0.17873287200927734
+details :  align_psnr : 10.75  psnr : 29.89
+epoch 55
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 55 [ 100/ 512 ( 20%)] Avgloss:1.873117 lr:0.0001 time:0.27873845544554454 bpp:0.1723688840866089
+details :  align_psnr : 10.53  psnr : 30.86
+Train Epoch : 55 [ 200/ 512 ( 39%)] Avgloss:1.724757 lr:0.0001 time:0.27385141999999996 bpp:0.1672469973564148
+details :  align_psnr : 10.77  psnr : 31.29
+Train Epoch : 55 [ 300/ 512 ( 59%)] Avgloss:1.750138 lr:0.0001 time:0.27346975 bpp:0.1623096466064453
+details :  align_psnr : 10.71  psnr : 31.14
+Train Epoch : 55 [ 400/ 512 ( 78%)] Avgloss:1.679165 lr:0.0001 time:0.27386588 bpp:0.15760549902915955
+details :  align_psnr : 10.67  psnr : 31.39
+Train Epoch : 55 [ 500/ 512 ( 98%)] Avgloss:1.463188 lr:0.0001 time:0.27248875 bpp:0.1531425267457962
+details :  align_psnr : 10.60  psnr : 31.97
+epoch 56
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 56 [ 100/ 512 ( 20%)] Avgloss:1.513036 lr:0.0001 time:0.2791919900990099 bpp:0.14812958240509033
+details :  align_psnr : 10.59  psnr : 31.82
+Train Epoch : 56 [ 200/ 512 ( 39%)] Avgloss:1.562711 lr:0.0001 time:0.27280594 bpp:0.14414413273334503
+details :  align_psnr : 10.45  psnr : 31.72
+Train Epoch : 56 [ 300/ 512 ( 59%)] Avgloss:1.404770 lr:0.0001 time:0.27293261999999996 bpp:0.13995370268821716
+details :  align_psnr : 10.51  psnr : 32.12
+Train Epoch : 56 [ 400/ 512 ( 78%)] Avgloss:1.475078 lr:0.0001 time:0.27399623 bpp:0.1363813579082489
+details :  align_psnr : 10.53  psnr : 31.91
+Train Epoch : 56 [ 500/ 512 ( 98%)] Avgloss:1.274105 lr:0.0001 time:0.27313148 bpp:0.13268080353736877
+details :  align_psnr : 10.52  psnr : 32.58
+epoch 57
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 57 [ 100/ 512 ( 20%)] Avgloss:1.270867 lr:0.0001 time:0.2778658613861386 bpp:0.12893369793891907
+details :  align_psnr : 10.46  psnr : 32.56
+Train Epoch : 57 [ 200/ 512 ( 39%)] Avgloss:1.350312 lr:0.0001 time:0.27408064 bpp:0.12546271085739136
+details :  align_psnr : 10.47  psnr : 32.32
+Train Epoch : 57 [ 300/ 512 ( 59%)] Avgloss:1.148818 lr:0.0001 time:0.27336947 bpp:0.12212170660495758
+details :  align_psnr : 10.44  psnr : 33.04
+Train Epoch : 57 [ 400/ 512 ( 78%)] Avgloss:1.272594 lr:0.0001 time:0.27323916 bpp:0.11905594170093536
+details :  align_psnr : 10.39  psnr : 32.56
+Train Epoch : 57 [ 500/ 512 ( 98%)] Avgloss:1.162357 lr:0.0001 time:0.27350401 bpp:0.11619724333286285
+details :  align_psnr : 10.59  psnr : 32.96
+epoch 58
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 58 [ 100/ 512 ( 20%)] Avgloss:1.081858 lr:0.0001 time:0.2789560099009901 bpp:0.1129240170121193
+details :  align_psnr : 10.59  psnr : 33.35
+Train Epoch : 58 [ 200/ 512 ( 39%)] Avgloss:1.693025 lr:0.0001 time:0.27134214 bpp:0.11013390868902206
+details :  align_psnr : 10.62  psnr : 31.70
+Train Epoch : 58 [ 300/ 512 ( 59%)] Avgloss:0.964985 lr:0.0001 time:0.27041150999999997 bpp:0.10732235014438629
+details :  align_psnr : 10.86  psnr : 33.82
+Train Epoch : 58 [ 400/ 512 ( 78%)] Avgloss:1.048903 lr:0.0001 time:0.27320044 bpp:0.1047845333814621
+details :  align_psnr : 10.76  psnr : 33.44
+Train Epoch : 58 [ 500/ 512 ( 98%)] Avgloss:1.087667 lr:0.0001 time:0.27186428 bpp:0.10233289003372192
+details :  align_psnr : 10.82  psnr : 33.31
+epoch 59
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 59 [ 100/ 512 ( 20%)] Avgloss:0.998594 lr:0.0001 time:0.2793047722772277 bpp:0.09984749555587769
+details :  align_psnr : 10.83  psnr : 33.62
+Train Epoch : 59 [ 200/ 512 ( 39%)] Avgloss:1.021925 lr:0.0001 time:0.27385335 bpp:0.09746044874191284
+details :  align_psnr : 10.88  psnr : 33.53
+Train Epoch : 59 [ 300/ 512 ( 59%)] Avgloss:0.929740 lr:0.0001 time:0.27272561 bpp:0.09514472633600235
+details :  align_psnr : 10.87  psnr : 33.99
+Train Epoch : 59 [ 400/ 512 ( 78%)] Avgloss:0.944544 lr:0.0001 time:0.27260139 bpp:0.09307186305522919
+details :  align_psnr : 11.01  psnr : 34.05
+Train Epoch : 59 [ 500/ 512 ( 98%)] Avgloss:1.098382 lr:0.0001 time:0.27337317 bpp:0.09099553525447845
+details :  align_psnr : 11.09  psnr : 33.32
+epoch 60
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 60 [ 100/ 512 ( 20%)] Avgloss:0.770662 lr:1e-05 time:0.2786632673267327 bpp:0.08953017741441727
+details :  align_psnr : 11.19  psnr : 34.83
+Train Epoch : 60 [ 200/ 512 ( 39%)] Avgloss:0.792181 lr:1e-05 time:0.27141556 bpp:0.08916494995355606
+details :  align_psnr : 11.20  psnr : 34.73
+Train Epoch : 60 [ 300/ 512 ( 59%)] Avgloss:0.754911 lr:1e-05 time:0.27188867 bpp:0.08896263688802719
+details :  align_psnr : 11.25  psnr : 34.95
+Train Epoch : 60 [ 400/ 512 ( 78%)] Avgloss:0.785808 lr:1e-05 time:0.27130541999999996 bpp:0.08879895508289337
+details :  align_psnr : 11.27  psnr : 34.72
+Train Epoch : 60 [ 500/ 512 ( 98%)] Avgloss:0.661775 lr:1e-05 time:0.27149826 bpp:0.08853328227996826
+details :  align_psnr : 11.19  psnr : 35.62
+epoch 61
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 61 [ 100/ 512 ( 20%)] Avgloss:0.743653 lr:1e-05 time:0.27975428712871286 bpp:0.0883551761507988
+details :  align_psnr : 11.12  psnr : 35.10
+Train Epoch : 61 [ 200/ 512 ( 39%)] Avgloss:0.733815 lr:1e-05 time:0.27382705 bpp:0.08812887221574783
+details :  align_psnr : 11.14  psnr : 35.09
+Train Epoch : 61 [ 300/ 512 ( 59%)] Avgloss:0.837991 lr:1e-05 time:0.27253441 bpp:0.08795922994613647
+details :  align_psnr : 11.06  psnr : 34.41
+Train Epoch : 61 [ 400/ 512 ( 78%)] Avgloss:0.765288 lr:1e-05 time:0.27302718 bpp:0.08765049278736115
+details :  align_psnr : 11.08  psnr : 34.86
+Train Epoch : 61 [ 500/ 512 ( 98%)] Avgloss:0.818947 lr:1e-05 time:0.27158454 bpp:0.08745017647743225
+details :  align_psnr : 11.12  psnr : 34.62
+epoch 62
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 62 [ 100/ 512 ( 20%)] Avgloss:0.785231 lr:1e-05 time:0.2780750099009901 bpp:0.08724330365657806
+details :  align_psnr : 11.09  psnr : 34.74
+Train Epoch : 62 [ 200/ 512 ( 39%)] Avgloss:0.693304 lr:1e-05 time:0.27171216000000004 bpp:0.0870237797498703
+details :  align_psnr : 11.04  psnr : 35.34
+Train Epoch : 62 [ 300/ 512 ( 59%)] Avgloss:0.732948 lr:1e-05 time:0.271791 bpp:0.08667008578777313
+details :  align_psnr : 11.17  psnr : 35.12
+Train Epoch : 62 [ 400/ 512 ( 78%)] Avgloss:0.704601 lr:1e-05 time:0.27170917 bpp:0.08640067279338837
+details :  align_psnr : 11.11  psnr : 35.26
+Train Epoch : 62 [ 500/ 512 ( 98%)] Avgloss:0.669531 lr:1e-05 time:0.27120366 bpp:0.08621691167354584
+details :  align_psnr : 11.08  psnr : 35.60
+epoch 63
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 63 [ 100/ 512 ( 20%)] Avgloss:0.670140 lr:1e-05 time:0.2785549702970297 bpp:0.08587098866701126
+details :  align_psnr : 11.02  psnr : 35.50
+Train Epoch : 63 [ 200/ 512 ( 39%)] Avgloss:0.680060 lr:1e-05 time:0.27187964000000003 bpp:0.08567138016223907
+details :  align_psnr : 11.04  psnr : 35.43
+Train Epoch : 63 [ 300/ 512 ( 59%)] Avgloss:0.731268 lr:1e-05 time:0.27098884 bpp:0.08541940152645111
+details :  align_psnr : 11.00  psnr : 35.08
+Train Epoch : 63 [ 400/ 512 ( 78%)] Avgloss:0.753195 lr:1e-05 time:0.27061046 bpp:0.08527325093746185
+details :  align_psnr : 10.99  psnr : 34.92
+Train Epoch : 63 [ 500/ 512 ( 98%)] Avgloss:0.748389 lr:1e-05 time:0.27094506 bpp:0.08482719957828522
+details :  align_psnr : 11.00  psnr : 35.04
+epoch 64
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 64 [ 100/ 512 ( 20%)] Avgloss:0.683915 lr:1e-05 time:0.2802353465346535 bpp:0.08460821956396103
+details :  align_psnr : 10.98  psnr : 35.46
+Train Epoch : 64 [ 200/ 512 ( 39%)] Avgloss:0.677109 lr:1e-05 time:0.27179211999999997 bpp:0.08448565006256104
+details :  align_psnr : 11.01  psnr : 35.48
+Train Epoch : 64 [ 300/ 512 ( 59%)] Avgloss:0.710522 lr:1e-05 time:0.27161825 bpp:0.08413411676883698
+details :  align_psnr : 11.03  psnr : 35.30
+Train Epoch : 64 [ 400/ 512 ( 78%)] Avgloss:0.723048 lr:1e-05 time:0.27194437 bpp:0.08384246379137039
+details :  align_psnr : 10.96  psnr : 35.14
+Train Epoch : 64 [ 500/ 512 ( 98%)] Avgloss:0.759977 lr:1e-05 time:0.27163216 bpp:0.08357995748519897
+details :  align_psnr : 10.86  psnr : 34.95
+epoch 65
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 65 [ 100/ 512 ( 20%)] Avgloss:0.664881 lr:1e-05 time:0.2811677722772277 bpp:0.08334758877754211
+details :  align_psnr : 10.98  psnr : 35.54
+Train Epoch : 65 [ 200/ 512 ( 39%)] Avgloss:0.753585 lr:1e-05 time:0.27148724 bpp:0.08308117836713791
+details :  align_psnr : 10.82  psnr : 34.98
+Train Epoch : 65 [ 300/ 512 ( 59%)] Avgloss:0.655247 lr:1e-05 time:0.27222838 bpp:0.08286537230014801
+details :  align_psnr : 10.94  psnr : 35.59
+Train Epoch : 65 [ 400/ 512 ( 78%)] Avgloss:0.625097 lr:1e-05 time:0.27331832 bpp:0.08256548643112183
+details :  align_psnr : 10.90  psnr : 35.79
+Train Epoch : 65 [ 500/ 512 ( 98%)] Avgloss:0.673056 lr:1e-05 time:0.27018749 bpp:0.08221922069787979
+details :  align_psnr : 10.92  psnr : 35.52
+epoch 66
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 66 [ 100/ 512 ( 20%)] Avgloss:0.686724 lr:1e-05 time:0.2791729207920792 bpp:0.08202532678842545
+details :  align_psnr : 10.87  psnr : 35.36
+Train Epoch : 66 [ 200/ 512 ( 39%)] Avgloss:0.640102 lr:1e-05 time:0.27448922 bpp:0.08182238042354584
+details :  align_psnr : 10.88  psnr : 35.70
+Train Epoch : 66 [ 300/ 512 ( 59%)] Avgloss:0.724527 lr:1e-05 time:0.27422378999999997 bpp:0.08154020458459854
+details :  align_psnr : 10.72  psnr : 35.19
+Train Epoch : 66 [ 400/ 512 ( 78%)] Avgloss:0.667186 lr:1e-05 time:0.27274576 bpp:0.08126614987850189
+details :  align_psnr : 10.79  psnr : 35.49
+Train Epoch : 66 [ 500/ 512 ( 98%)] Avgloss:0.544853 lr:1e-05 time:0.27281553 bpp:0.08096601068973541
+details :  align_psnr : 10.86  psnr : 36.46
+epoch 67
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 67 [ 100/ 512 ( 20%)] Avgloss:0.592121 lr:1e-05 time:0.2812841881188119 bpp:0.08063143491744995
+details :  align_psnr : 10.78  psnr : 36.09
+Train Epoch : 67 [ 200/ 512 ( 39%)] Avgloss:0.652757 lr:1e-05 time:0.27401816 bpp:0.08042880147695541
+details :  align_psnr : 10.70  psnr : 35.66
+Train Epoch : 67 [ 300/ 512 ( 59%)] Avgloss:0.602933 lr:1e-05 time:0.27641091 bpp:0.0802818313241005
+details :  align_psnr : 10.73  psnr : 36.06
+Train Epoch : 67 [ 400/ 512 ( 78%)] Avgloss:0.544353 lr:1e-05 time:0.27387338 bpp:0.07996346056461334
+details :  align_psnr : 10.77  psnr : 36.48
+Train Epoch : 67 [ 500/ 512 ( 98%)] Avgloss:0.569541 lr:1e-05 time:0.27348273 bpp:0.07969970256090164
+details :  align_psnr : 10.78  psnr : 36.28
+epoch 68
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 68 [ 100/ 512 ( 20%)] Avgloss:0.498366 lr:1e-05 time:0.27876432673267326 bpp:0.07929424941539764
+details :  align_psnr : 10.73  psnr : 36.93
+Train Epoch : 68 [ 200/ 512 ( 39%)] Avgloss:0.563864 lr:1e-05 time:0.27110871 bpp:0.07917119562625885
+details :  align_psnr : 10.72  psnr : 36.33
+Train Epoch : 68 [ 300/ 512 ( 59%)] Avgloss:0.561911 lr:1e-05 time:0.27221899 bpp:0.07887585461139679
+details :  align_psnr : 10.74  psnr : 36.36
+Train Epoch : 68 [ 400/ 512 ( 78%)] Avgloss:0.568241 lr:1e-05 time:0.27220134 bpp:0.07862484455108643
+details :  align_psnr : 10.67  psnr : 36.37
+Train Epoch : 68 [ 500/ 512 ( 98%)] Avgloss:0.571519 lr:1e-05 time:0.27168115 bpp:0.07840795814990997
+details :  align_psnr : 10.74  psnr : 36.26
+epoch 69
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 69 [ 100/ 512 ( 20%)] Avgloss:0.522744 lr:1e-05 time:0.2786760198019802 bpp:0.07808064669370651
+details :  align_psnr : 10.68  psnr : 36.70
+Train Epoch : 69 [ 200/ 512 ( 39%)] Avgloss:0.541683 lr:1e-05 time:0.27141065999999997 bpp:0.07786514610052109
+details :  align_psnr : 10.68  psnr : 36.50
+Train Epoch : 69 [ 300/ 512 ( 59%)] Avgloss:0.530930 lr:1e-05 time:0.27171037 bpp:0.07766450941562653
+details :  align_psnr : 10.66  psnr : 36.74
+Train Epoch : 69 [ 400/ 512 ( 78%)] Avgloss:0.488333 lr:1e-05 time:0.27156062999999997 bpp:0.0773492306470871
+details :  align_psnr : 10.69  psnr : 37.11
+Train Epoch : 69 [ 500/ 512 ( 98%)] Avgloss:0.522569 lr:1e-05 time:0.27219071 bpp:0.07726923376321793
+details :  align_psnr : 10.74  psnr : 36.77
+epoch 70
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 70 [ 100/ 512 ( 20%)] Avgloss:0.475914 lr:1.0000000000000002e-06 time:0.2792438811881188 bpp:0.0769052505493164
+details :  align_psnr : 10.66  psnr : 37.14
+Train Epoch : 70 [ 200/ 512 ( 39%)] Avgloss:0.561751 lr:1.0000000000000002e-06 time:0.27536392 bpp:0.07695405930280685
+details :  align_psnr : 10.63  psnr : 36.41
+Train Epoch : 70 [ 300/ 512 ( 59%)] Avgloss:0.479146 lr:1.0000000000000002e-06 time:0.275991 bpp:0.0769815668463707
+details :  align_psnr : 10.68  psnr : 37.10
+Train Epoch : 70 [ 400/ 512 ( 78%)] Avgloss:0.511060 lr:1.0000000000000002e-06 time:0.27143708 bpp:0.07691308110952377
+details :  align_psnr : 10.63  psnr : 36.82
+Train Epoch : 70 [ 500/ 512 ( 98%)] Avgloss:0.492509 lr:1.0000000000000002e-06 time:0.27173606 bpp:0.07682035863399506
+details :  align_psnr : 10.74  psnr : 36.99
+epoch 71
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 71 [ 100/ 512 ( 20%)] Avgloss:0.542619 lr:1.0000000000000002e-06 time:0.27826043564356434 bpp:0.0768764466047287
+details :  align_psnr : 10.57  psnr : 36.56
+Train Epoch : 71 [ 200/ 512 ( 39%)] Avgloss:0.490479 lr:1.0000000000000002e-06 time:0.2725287 bpp:0.07681529223918915
+details :  align_psnr : 10.61  psnr : 37.02
+Train Epoch : 71 [ 300/ 512 ( 59%)] Avgloss:0.512765 lr:1.0000000000000002e-06 time:0.27023301 bpp:0.07687189429998398
+details :  align_psnr : 10.59  psnr : 36.86
+Train Epoch : 71 [ 400/ 512 ( 78%)] Avgloss:0.512298 lr:1.0000000000000002e-06 time:0.27204887 bpp:0.07686983048915863
+details :  align_psnr : 10.59  psnr : 36.82
+Train Epoch : 71 [ 500/ 512 ( 98%)] Avgloss:0.546296 lr:1.0000000000000002e-06 time:0.2702146 bpp:0.07681989669799805
+details :  align_psnr : 10.58  psnr : 36.55
+epoch 72
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 72 [ 100/ 512 ( 20%)] Avgloss:0.521052 lr:1.0000000000000002e-06 time:0.27829563366336635 bpp:0.07677868008613586
+details :  align_psnr : 10.62  psnr : 36.75
+Train Epoch : 72 [ 200/ 512 ( 39%)] Avgloss:0.468292 lr:1.0000000000000002e-06 time:0.27122368 bpp:0.07677561044692993
+details :  align_psnr : 10.63  psnr : 37.28
+Train Epoch : 72 [ 300/ 512 ( 59%)] Avgloss:0.487835 lr:1.0000000000000002e-06 time:0.27010596 bpp:0.07674811035394669
+details :  align_psnr : 10.61  psnr : 37.07
+Train Epoch : 72 [ 400/ 512 ( 78%)] Avgloss:0.440325 lr:1.0000000000000002e-06 time:0.27041688 bpp:0.07663606107234955
+details :  align_psnr : 10.57  psnr : 37.69
+Train Epoch : 72 [ 500/ 512 ( 98%)] Avgloss:0.482199 lr:1.0000000000000002e-06 time:0.26987843 bpp:0.07662337273359299
+details :  align_psnr : 10.64  psnr : 37.11
+epoch 73
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 73 [ 100/ 512 ( 20%)] Avgloss:0.485190 lr:1.0000000000000002e-06 time:0.2788338415841584 bpp:0.07657093554735184
+details :  align_psnr : 10.56  psnr : 37.14
+Train Epoch : 73 [ 200/ 512 ( 39%)] Avgloss:0.417507 lr:1.0000000000000002e-06 time:0.27244951 bpp:0.07656638324260712
+details :  align_psnr : 10.59  psnr : 37.85
+Train Epoch : 73 [ 300/ 512 ( 59%)] Avgloss:0.401699 lr:1.0000000000000002e-06 time:0.27260468 bpp:0.07657007873058319
+details :  align_psnr : 10.59  psnr : 38.02
+Train Epoch : 73 [ 400/ 512 ( 78%)] Avgloss:0.567161 lr:1.0000000000000002e-06 time:0.27345217 bpp:0.0765984058380127
+details :  align_psnr : 10.50  psnr : 36.33
+Train Epoch : 73 [ 500/ 512 ( 98%)] Avgloss:0.471010 lr:1.0000000000000002e-06 time:0.27288208 bpp:0.07646144926548004
+details :  align_psnr : 10.52  psnr : 37.29
+epoch 74
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 74 [ 100/ 512 ( 20%)] Avgloss:0.437440 lr:1.0000000000000002e-06 time:0.27941344554455444 bpp:0.07655046135187149
+details :  align_psnr : 10.57  psnr : 37.61
+Train Epoch : 74 [ 200/ 512 ( 39%)] Avgloss:0.445608 lr:1.0000000000000002e-06 time:0.27337659999999997 bpp:0.07641923427581787
+details :  align_psnr : 10.65  psnr : 37.54
+Train Epoch : 74 [ 300/ 512 ( 59%)] Avgloss:0.464103 lr:1.0000000000000002e-06 time:0.27382707 bpp:0.07646895945072174
+details :  align_psnr : 10.60  psnr : 37.30
+Train Epoch : 74 [ 400/ 512 ( 78%)] Avgloss:0.455939 lr:1.0000000000000002e-06 time:0.27070831 bpp:0.07631396502256393
+details :  align_psnr : 10.56  psnr : 37.38
+Train Epoch : 74 [ 500/ 512 ( 98%)] Avgloss:0.444784 lr:1.0000000000000002e-06 time:0.27107949000000003 bpp:0.07645541429519653
+details :  align_psnr : 10.60  psnr : 37.52
+epoch 75
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 75 [ 100/ 512 ( 20%)] Avgloss:0.445450 lr:1.0000000000000002e-06 time:0.27839160396039603 bpp:0.07641134411096573
+details :  align_psnr : 10.47  psnr : 37.52
+Train Epoch : 75 [ 200/ 512 ( 39%)] Avgloss:0.459078 lr:1.0000000000000002e-06 time:0.27384518 bpp:0.07630403339862823
+details :  align_psnr : 10.59  psnr : 37.33
+Train Epoch : 75 [ 300/ 512 ( 59%)] Avgloss:0.487824 lr:1.0000000000000002e-06 time:0.27215292 bpp:0.07633091509342194
+details :  align_psnr : 10.52  psnr : 37.05
+Train Epoch : 75 [ 400/ 512 ( 78%)] Avgloss:0.446859 lr:1.0000000000000002e-06 time:0.27362514 bpp:0.07622264325618744
+details :  align_psnr : 10.53  psnr : 37.46
+Train Epoch : 75 [ 500/ 512 ( 98%)] Avgloss:0.407294 lr:1.0000000000000002e-06 time:0.27467689 bpp:0.07622426003217697
+details :  align_psnr : 10.65  psnr : 37.97
+epoch 76
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 76 [ 100/ 512 ( 20%)] Avgloss:0.470552 lr:1.0000000000000002e-06 time:0.2809630495049505 bpp:0.0762655958533287
+details :  align_psnr : 10.55  psnr : 37.27
+Train Epoch : 76 [ 200/ 512 ( 39%)] Avgloss:0.484151 lr:1.0000000000000002e-06 time:0.2722026 bpp:0.0762387067079544
+details :  align_psnr : 10.55  psnr : 37.13
+Train Epoch : 76 [ 300/ 512 ( 59%)] Avgloss:0.445324 lr:1.0000000000000002e-06 time:0.27328284 bpp:0.076155886054039
+details :  align_psnr : 10.52  psnr : 37.57
+Train Epoch : 76 [ 400/ 512 ( 78%)] Avgloss:0.457677 lr:1.0000000000000002e-06 time:0.27135342 bpp:0.07613478600978851
+details :  align_psnr : 10.46  psnr : 37.46
+Train Epoch : 76 [ 500/ 512 ( 98%)] Avgloss:0.432054 lr:1.0000000000000002e-06 time:0.27174457 bpp:0.07604826241731644
+details :  align_psnr : 10.56  psnr : 37.72
+epoch 77
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 77 [ 100/ 512 ( 20%)] Avgloss:0.431865 lr:1.0000000000000002e-06 time:0.2778931782178218 bpp:0.07608842104673386
+details :  align_psnr : 10.42  psnr : 37.67
+Train Epoch : 77 [ 200/ 512 ( 39%)] Avgloss:0.435053 lr:1.0000000000000002e-06 time:0.27177587 bpp:0.07610652595758438
+details :  align_psnr : 10.54  psnr : 37.69
+Train Epoch : 77 [ 300/ 512 ( 59%)] Avgloss:0.498829 lr:1.0000000000000002e-06 time:0.27202945 bpp:0.0760582983493805
+details :  align_psnr : 10.51  psnr : 36.92
+Train Epoch : 77 [ 400/ 512 ( 78%)] Avgloss:0.412550 lr:1.0000000000000002e-06 time:0.27078374 bpp:0.0760153979063034
+details :  align_psnr : 10.50  psnr : 37.91
+Train Epoch : 77 [ 500/ 512 ( 98%)] Avgloss:0.427265 lr:1.0000000000000002e-06 time:0.27098494 bpp:0.07600949704647064
+details :  align_psnr : 10.52  psnr : 37.70
+epoch 78
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 78 [ 100/ 512 ( 20%)] Avgloss:0.443888 lr:1.0000000000000002e-06 time:0.27852452475247524 bpp:0.07597392797470093
+details :  align_psnr : 10.53  psnr : 37.61
+Train Epoch : 78 [ 200/ 512 ( 39%)] Avgloss:0.394736 lr:1.0000000000000002e-06 time:0.27284672 bpp:0.07588806748390198
+details :  align_psnr : 10.46  psnr : 38.11
+Train Epoch : 78 [ 300/ 512 ( 59%)] Avgloss:0.417726 lr:1.0000000000000002e-06 time:0.27305202 bpp:0.07585631310939789
+details :  align_psnr : 10.56  psnr : 37.85
+Train Epoch : 78 [ 400/ 512 ( 78%)] Avgloss:0.442154 lr:1.0000000000000002e-06 time:0.27081677 bpp:0.07596304267644882
+details :  align_psnr : 10.50  psnr : 37.58
+Train Epoch : 78 [ 500/ 512 ( 98%)] Avgloss:0.441093 lr:1.0000000000000002e-06 time:0.27206233999999996 bpp:0.07583625614643097
+details :  align_psnr : 10.50  psnr : 37.81
+epoch 79
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Train Epoch : 79 [ 100/ 512 ( 20%)] Avgloss:0.399842 lr:1.0000000000000002e-06 time:0.2773421881188119 bpp:0.07571861147880554
+details :  align_psnr : 10.54  psnr : 38.09
+Train Epoch : 79 [ 200/ 512 ( 39%)] Avgloss:0.402806 lr:1.0000000000000002e-06 time:0.27185686 bpp:0.07574573159217834
+details :  align_psnr : 10.51  psnr : 38.11
+Train Epoch : 79 [ 300/ 512 ( 59%)] Avgloss:0.425406 lr:1.0000000000000002e-06 time:0.27224763 bpp:0.07584093511104584
+details :  align_psnr : 10.43  psnr : 37.75
+Train Epoch : 79 [ 400/ 512 ( 78%)] Avgloss:0.431264 lr:1.0000000000000002e-06 time:0.27260679 bpp:0.07579036056995392
+details :  align_psnr : 10.41  psnr : 37.68
+Train Epoch : 79 [ 500/ 512 ( 98%)] Avgloss:0.379476 lr:1.0000000000000002e-06 time:0.27226057000000004 bpp:0.07579085975885391
+details :  align_psnr : 10.54  psnr : 38.39
